@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path of Hero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Path of Hero</h1>
+        <p>Train your mind, body, and skills daily to become a hero.</p>
+    </header>
+
+    <!-- Progress Bar Section -->
+    <section id="progress-section">
+        <h2>Daily Progress</h2>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <p id="progress-text">0% completed</p>
+    </section>
+
+    <section id="daily-routine">
+        <h2>Daily Hero Routine</h2>
+        <ul>
+            <li>
+                <img src="Image/mental-health-2313426_1280.png" alt="Mental Training">
+                <div>
+                    <h3>Mental Training</h3>
+                    <p>10 minutes of learning or problem-solving</p>
+                    <button onclick="markComplete(this)">Complete</button>
+                </div>
+            </li>
+            <li>
+                <img src="Image/bicycling-1634728_1280.png" alt="Physical Training">
+                <div>
+                    <h3>Physical Training</h3>
+                    <p>10 minutes of exercise or stretching</p>
+                    <button onclick="markComplete(this)">Complete</button>
+                </div>
+            </li>
+            <li>
+                <img src="Image/goal-1747234_1280.jpg" alt="Mission Planning">
+                <div>
+                    <h3>Mission Planning</h3>
+                    <p>5–10 minutes journaling or goal setting</p>
+                    <button onclick="markComplete(this)">Complete</button>
+                </div>
+            </li>
+            <li>
+                <img src="Image/onion-7434358_1280.jpg" alt="Healthy Food">
+                <div>
+                    <h3>Nutrition</h3>
+                    <p>Eat a balanced meal or snack (protein, carbs, veggies)</p>
+                    <button onclick="markComplete(this)">Complete</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>“Train today, be a hero tomorrow.”</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
