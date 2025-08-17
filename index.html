@@ -7,18 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+        const user = localStorage.getItem('currentUser');
+        if (!user) window.location.href = 'login.html';
+    </script>
+
     <header>
         <h1>Path of Hero</h1>
         <p>Train your mind, body, and skills daily to become a hero.</p>
+        <p id="welcome-user"></p>
+        <button onclick="logout()">Logout</button>
     </header>
 
-    <!-- Progress Bar Section -->
     <section id="progress-section">
         <h2>Daily Progress</h2>
         <div id="progress-container">
             <div id="progress-bar"></div>
         </div>
         <p id="progress-text">0% completed</p>
+        <p id="streak-text">Current streak: 0 days</p>
+        <button id="reset-btn" onclick="resetDay()">Reset Today</button>
     </section>
 
     <section id="daily-routine">
@@ -49,7 +57,7 @@
                 </div>
             </li>
             <li>
-                <img src="Image/onion-7434358_1280.jpg" alt="Healthy Food">
+                <img src="Image/onion-7434358_1280.jpg" alt="Nutrition">
                 <div>
                     <h3>Nutrition</h3>
                     <p>Eat a balanced meal or snack (protein, carbs, veggies)</p>
