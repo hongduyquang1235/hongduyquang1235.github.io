@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -24,7 +23,6 @@ section {
     padding: 1rem;
 }
 
-/* Progress Bar Styles */
 #progress-container {
     width: 100%;
     background-color: #ddd;
@@ -41,10 +39,9 @@ section {
     line-height: 20px;
     color: white;
     border-radius: 10px 0 0 10px;
-    transition: width 0.3s;
+    transition: width 0.3s, background-color 0.3s;
 }
 
-/* Daily Routine Styles */
 ul {
     list-style: none;
     padding: 0;
@@ -87,10 +84,61 @@ button:hover {
     background-color: #357ABD;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 2rem 1rem;
     background-color: #222;
     color: white;
+}
+
+.auth-container {
+    max-width: 400px;
+    margin: 5rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.auth-container input {
+    width: 80%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.auth-container button {
+    width: 50%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-container button:hover {
+    background-color: #357ABD;
+}
+
+#auth-message {
+    margin-top: 1rem;
+    color: red;
+}
+
+#reset-btn {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background-color: #2980b9;
 }
